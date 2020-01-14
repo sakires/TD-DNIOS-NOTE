@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     @IBOutlet weak var TextNoteTitle: UITextField!
     @IBOutlet weak var textNoteDesc: UITextView!
+    var editNote:Note?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,5 +29,8 @@ class ViewController: UIViewController {
         textNoteDesc.text = ""
     }
     
+    @IBAction func buttonActionBackToListNotes(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
 }
 

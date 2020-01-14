@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		232152AB23C37D490005FF5A /* ViewControllerListNotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232152AA23C37D490005FF5A /* ViewControllerListNotesViewController.swift */; };
+		234F5BAF23C48873002A4DC8 /* TableViewCellNotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234F5BAE23C48873002A4DC8 /* TableViewCellNotes.swift */; };
 		23D85D8323C36BAB00BECF55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D85D8223C36BAB00BECF55 /* AppDelegate.swift */; };
 		23D85D8523C36BAB00BECF55 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D85D8423C36BAB00BECF55 /* ViewController.swift */; };
 		23D85D8823C36BAB00BECF55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23D85D8623C36BAB00BECF55 /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		232152AA23C37D490005FF5A /* ViewControllerListNotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerListNotesViewController.swift; sourceTree = "<group>"; };
+		234F5BAE23C48873002A4DC8 /* TableViewCellNotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellNotes.swift; sourceTree = "<group>"; };
 		23D85D7F23C36BAB00BECF55 /* TD-NOTE-DNIOS-DESCHAMPS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TD-NOTE-DNIOS-DESCHAMPS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		23D85D8223C36BAB00BECF55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23D85D8423C36BAB00BECF55 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 		23D85D8123C36BAB00BECF55 /* TD-NOTE-DNIOS-DESCHAMPS */ = {
 			isa = PBXGroup;
 			children = (
+				234F5BAE23C48873002A4DC8 /* TableViewCellNotes.swift */,
 				23D85D8223C36BAB00BECF55 /* AppDelegate.swift */,
 				23D85D8423C36BAB00BECF55 /* ViewController.swift */,
 				23D85D8623C36BAB00BECF55 /* Main.storyboard */,
@@ -143,6 +146,7 @@
 			files = (
 				23D85D8523C36BAB00BECF55 /* ViewController.swift in Sources */,
 				232152AB23C37D490005FF5A /* ViewControllerListNotesViewController.swift in Sources */,
+				234F5BAF23C48873002A4DC8 /* TableViewCellNotes.swift in Sources */,
 				23D85D8323C36BAB00BECF55 /* AppDelegate.swift in Sources */,
 				23D85D8B23C36BAB00BECF55 /* TD_NOTE_DNIOS_DESCHAMPS.xcdatamodeld in Sources */,
 			);
