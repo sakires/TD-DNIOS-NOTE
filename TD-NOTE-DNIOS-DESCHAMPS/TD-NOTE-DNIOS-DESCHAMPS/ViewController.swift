@@ -15,18 +15,42 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        if let note = editNote {
+            TextNoteTitle.text = note.title
+            textNoteDesc.text = note.desc
+        }
     }
 
     @IBAction func actionNoteSave(_ sender: Any) {
-        let newNote = Note(context: context)
+        
+        var newNote:Note?
+        var isEdit:Bool = false
+        
+        if let note = editNote {
+            newNote = note
+            isEdit = true
+        }else{
+            newNote = Note(context: context)
+        }
+        
+        newNote?.title = TextNoteTitle.text
+        newNote?.desc = textNoteDesc.text
+        newNote?.date_creation = NSDate() as Date
+        ad.saveContext()
+        TextNoteTitle.text = ""
+        textNoteDesc.text = ""
+        if isEdit {
+            dismiss(animated: true, completion: nil)
+        }
+        /*let newNote = Note(context: context)
         newNote.title = TextNoteTitle.text
         newNote.desc =  textNoteDesc.text
         newNote.date_creation =  NSDate() as Date
         
         ad.saveContext()
         TextNoteTitle.text = ""
-        textNoteDesc.text = ""
+        textNoteDesc.text = ""*/
     }
     
     @IBAction func buttonActionBackToListNotes(_ sender: Any) {

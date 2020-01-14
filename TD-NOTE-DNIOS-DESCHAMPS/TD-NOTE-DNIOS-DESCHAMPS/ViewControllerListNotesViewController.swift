@@ -24,6 +24,13 @@ class ViewControllerListNotesViewController: UIViewController, UITableViewDelega
         // Do any additional setup after loading the view.
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        loadNote()
+        tableViewListNote.delegate = self
+        tableViewListNote.dataSource = self
+    }
+    
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
