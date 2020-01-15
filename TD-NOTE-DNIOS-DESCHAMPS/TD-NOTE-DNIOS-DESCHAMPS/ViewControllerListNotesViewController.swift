@@ -78,7 +78,8 @@ class ViewControllerListNotesViewController: UIViewController, UITableViewDelega
         }
         loadNote()
     }
-    func loadNote (){
+    
+    func loadNote(){
         let fetchRequest:NSFetchRequest<Note> = Note.fetchRequest()
         do{
             listeNote = try context.fetch(fetchRequest)

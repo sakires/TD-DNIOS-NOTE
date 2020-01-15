@@ -54,7 +54,8 @@ class ViewController: UIViewController {
     }
     
     @IBAction func buttonActionBackToListNotes(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
+        let viewControllerListNotesViewController = self.presentingViewController as? ViewControllerListNotesViewController
+        dismiss(animated:true, completion:{viewControllerListNotesViewController?.loadNote()})
     }
 }
 
